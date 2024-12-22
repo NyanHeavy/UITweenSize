@@ -44,6 +44,14 @@ if (positionEnabled || rotationEnabled || scaleEnabled || sizeEnabled) ...
 ```csharp
 if (positionEnabled || rotationEnabled || scaleEnabled || sizeEnabled || tweenScript.animationParts.FadePropetiesAnim.IsFadeEnabled()) ...
 ```
+> Modify line 144
+```csharp
+tweenScript.animationParts.SizePropetiesAnim.StartSize = selectedTransform.sizeDelta;
+```
+> Modify line 154
+```csharp
+tweenScript.animationParts.SizePropetiesAnim.EndSize = selectedTransform.sizeDelta;
+```
 > Add line 325
 ```csharp
 void EditorSize()
