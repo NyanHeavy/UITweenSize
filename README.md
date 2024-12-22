@@ -52,6 +52,16 @@ tweenScript.animationParts.SizePropetiesAnim.StartSize = selectedTransform.sizeD
 ```csharp
 tweenScript.animationParts.SizePropetiesAnim.EndSize = selectedTransform.sizeDelta;
 ```
+> Modify line 170
+```csharp
+if (tweenScript.animationParts.SizePropetiesAnim.IsSizeEnabled())
+        selectedTransform.sizeDelta = tweenScript.animationParts.SizePropetiesAnim.StartSize;
+```
+> Modify line 195
+```csharp
+if (tweenScript.animationParts.SizePropetiesAnim.IsSizeEnabled())
+        selectedTransform.sizeDelta = tweenScript.animationParts.SizePropetiesAnim.EndSize;
+```
 > Add line 325
 ```csharp
 void EditorSize()
@@ -96,6 +106,24 @@ void EditorSize()
 if (animationPart.SizePropetiesAnim.IsSizeEnabled())
 {
     SizeAnimation(rectTransform, percentage);
+}
+```
+> Add line 147
+```csharp
+if (animationPart.SizePropetiesAnim.IsSizeEnabled())
+{
+    SetCurrentAnimSize(animationPart.SizePropetiesAnim.TweenCurveEnterSize,
+        animationPart.SizePropetiesAnim.StartSize,
+        animationPart.SizePropetiesAnim.EndSize);
+}
+```
+> Add line 200
+```csharp
+if (animationPart.SizePropetiesAnim.IsSizeEnabled())
+{
+    SetCurrentAnimSize(animationPart.SizePropetiesAnim.TweenCurveExitSize,
+        animationPart.SizePropetiesAnim.EndSize,
+        animationPart.SizePropetiesAnim.StartSize);
 }
 ```
 > Add line 232
