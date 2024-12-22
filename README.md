@@ -9,9 +9,9 @@ Goal
 This repository aims to add the possibility to animate the size of the object instead of the scale as default.
 ![image](https://github.com/user-attachments/assets/a1988634-1d8f-4c91-921e-b552cde68fe3)
 
-Script Modifications
+Disclaimer
 ----
-For this to be possible, 3 scripts must be modified as shown below.
+UITweenSize is not affiliated with, supported or endorsed by the [UITween](https://assetstore.unity.com/packages/tools/animation/ui-tween-38583) asset by [Adi Zhavo](https://assetstore.unity.com/publishers/13979)
 
 **EasyTween.cs**
 ----
