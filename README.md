@@ -13,6 +13,10 @@ Disclaimer
 ----
 UITweenSize is not affiliated with, supported or endorsed by the [UITween](https://assetstore.unity.com/packages/tools/animation/ui-tween-38583) asset by [Adi Zhavo](https://assetstore.unity.com/publishers/13979)
 
+Use
+----
+After importing the asset, modify the following scripts:
+
 **EasyTween.cs**
 ----
 > Add line 82
