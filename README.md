@@ -130,7 +130,7 @@ if (animationPart.SizePropetiesAnim.IsSizeEnabled())
         animationPart.SizePropetiesAnim.StartSize);
 }
 ```
-> Add line 232
+> Add line 230
 ```csharp
 public void SetAnimationSize(Vector2 StartSize, Vector2 EndSize, AnimationCurve EntryTween, AnimationCurve ExitTween)
 {
@@ -140,7 +140,7 @@ public void SetAnimationSize(Vector2 StartSize, Vector2 EndSize, AnimationCurve 
     animationPart.SizePropetiesAnim.SetAnimationsCurve(EntryTween, ExitTween);
 }
 ```
-> Add line 312
+> Add line 303
 ```csharp
 #region SizeAnim
 
@@ -164,7 +164,7 @@ public void SizeAnimation(RectTransform _rectTransform, float _counterTween)
 
 #endregion
 ```
-> Add line 508
+> Add line 521
 ```csharp
 [System.Serializable]
 public class SizePropetiesAnim
@@ -203,7 +203,7 @@ public class SizePropetiesAnim
   #endregion
 }
 ```
-> Add line 680
+> Add line 693
 ```csharp
 #region SizeEditor
 
