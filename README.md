@@ -32,41 +32,41 @@ public void SetAnimationSize(Vector3 StartSize, Vector3 EndSize, AnimationCurve 
 ```csharp
 private bool sizeEnabled;
 ```
-> Add line 61
+> Add line 57
 ```csharp
 EditorSize();
 ```
-> Modify line 91
+> Modify line 83
 ```csharp
 if (positionEnabled || rotationEnabled || scaleEnabled || sizeEnabled || tweenScript.animationParts.FadePropetiesAnim.IsFadeEnabled()) ...
 ```
-> Modify line 103
+> Modify line 93
 ```csharp
 if (positionEnabled || rotationEnabled || scaleEnabled || sizeEnabled) ...
 ```
-> Modify line 122
+> Modify line 109
 ```csharp
 if (positionEnabled || rotationEnabled || scaleEnabled || sizeEnabled || tweenScript.animationParts.FadePropetiesAnim.IsFadeEnabled()) ...
 ```
-> Modify line 144
+> Add line 128
 ```csharp
 tweenScript.animationParts.SizePropetiesAnim.StartSize = selectedTransform.sizeDelta;
 ```
-> Modify line 154
+> Add line 138
 ```csharp
 tweenScript.animationParts.SizePropetiesAnim.EndSize = selectedTransform.sizeDelta;
 ```
-> Modify line 170
+> Add line 154
 ```csharp
 if (tweenScript.animationParts.SizePropetiesAnim.IsSizeEnabled())
         selectedTransform.sizeDelta = tweenScript.animationParts.SizePropetiesAnim.StartSize;
 ```
-> Modify line 195
+> Add line 178
 ```csharp
 if (tweenScript.animationParts.SizePropetiesAnim.IsSizeEnabled())
         selectedTransform.sizeDelta = tweenScript.animationParts.SizePropetiesAnim.EndSize;
 ```
-> Add line 325
+> Add line 304
 ```csharp
 void EditorSize()
 {
